@@ -6,87 +6,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <style>
 
+    <style>
         header {
             display: flex;
             justify-content: center;
+            align-items: center;
             background-color: rgb(241, 136, 171);
-            height: 25PX;
+            height: 25px;
             width: 100%;
-
         }
 
         nav ul {
             display: flex;
+            align-items: center;
+            flex-wrap: wrap;
         }
 
         ul img {
-            display: flex;
-            justify-content: first baseline;
             margin: 10px;
         }
 
         ul {
             list-style: none;
             gap: 15px;
-            justify-content: right;
+            justify-content: flex-end;
         }
 
         main {
-            justify-content: center;
-
-        }
-
-        .container {
             display: flex;
-            justify-self: center;
-
+            justify-content: center;
         }
 
+        
         .container {
             display: flex;
             position: relative;
-            margin: 1px;
+            margin-top: 50px;
             align-content: center;
             flex-wrap: wrap;
-            padding: initial;
             background-color: aqua;
             gap: 45px;
-            height: 500px;
-            width: 500px;
             justify-content: center;
-            margin-top: 50px;
-
+            width: 90%;
+            max-width: 500px;
+            min-width: 280px;
+            height: auto;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
+        
         .item {
             display: grid;
-            grid-row: 1/2;
             background-color: rgb(242, 81, 135);
             border: 2px solid rgb(219, 14, 82);
-
             height: 130px;
             width: 130px;
             color: aliceblue;
             text-align: center;
             overflow: auto;
             padding: 2px;
+            box-sizing: border-box;
         }
 
         hr {
             height: 1px;
             background-color: rgb(243, 166, 191);
-            border: 1px palevioletred;
+            border: 1px solid palevioletred;
         }
 
+        
         @media only screen and (max-width: 600px) {
-            .container {
-                width: 130px;
-                height: 130px;
+
+            .item {
+                width: 90px;
+                height: 90px;
+                font-size: 0.8rem;
             }
 
+            h1 {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            nav ul {
+                justify-content:right;
+            }
         }
     </style>
 </head>
@@ -96,11 +102,11 @@
     <nav>
 
         <ul>
-            <li><img src="./UTK.png" alt="" width="200px" height="65px"></li>
+
             <li>Persistance</li>
             <li>Hardworker</li>
             <li>Adaptable</li>
-            
+
         </ul>
     </nav>
     <hr>
@@ -136,8 +142,8 @@
 
 
 
-    <hr>
-    <main>
+        <hr>
+        <main>
             <div class="container">
                 <div>
                     <h1>PAST QUALIFICATION</h1>
@@ -151,10 +157,10 @@
                     <h3>77.17</h3>
                 </div>
             </div>
-    </main>
-    <HR>
+        </main>
+        <HR>
 
-        
+
 
 
 
